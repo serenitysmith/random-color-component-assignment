@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.colors {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: var(--background-color, #FFFFFF); /* Default background color */
+  transition: background-color 0.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-family: fantasy;
+  font-size: 30px;
+  color: #6b36dc; /* Text color */
+  margin-bottom: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  background-color: #7b2160; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #583a51; /* Button background color on hover */
+}
+
+
+.button-text-color {
+  color: #fea2cb; /* Change the button's text color here */
 }
